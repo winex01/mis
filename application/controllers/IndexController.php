@@ -20,10 +20,13 @@ class IndexController extends CI_Controller {
 	 */
 	public function index()
 	{	
-		$body = 'guest/index';
 		$vars = [
 			'name' => 'Winnie A. Damayo'
 		];
-		$this->load->view('template', compact('body', 'vars'));
+		
+		$this->load->view('template', [
+			'page' => 'guest/index',
+			'vars' => $vars
+		]);
 	}
 }
