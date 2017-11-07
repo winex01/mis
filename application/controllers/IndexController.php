@@ -21,6 +21,9 @@ class IndexController extends CI_Controller {
 	public function index()
 	{	
 		$body = 'guest/index';
-		$this->load->view('template', compact('body'));
+		$vars = [
+			'name' => 'Winnie A. Damayo'
+		];
+		$this->load->view('template', compact('body', 'vars'));
 	}
 }

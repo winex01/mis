@@ -1,5 +1,9 @@
 <?php 
 
 $this->load->view('templates/header');
-$this->load->view($body);
+if (!empty($vars)) {
+	$this->load->view($body, $vars);
+}else {
+	$this->load->view($body);
+}
 $this->load->view('templates/footer');
