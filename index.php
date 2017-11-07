@@ -1,4 +1,8 @@
 <?php
+
+// my composer dependency packages
+include_once './vendor/autoload.php';
+
 /**
  * CodeIgniter
  *
