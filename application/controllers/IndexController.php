@@ -19,7 +19,8 @@ class IndexController extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{
-		$this->load->view('IndexView');
+	{	
+		$body = 'guest/index';
+		$this->load->view('template', compact('body'));
 	}
 }
